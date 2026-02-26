@@ -1,21 +1,24 @@
-## Use Case 4 – Character Array Based Palindrome Check
+Use Case 5 – Stack Based Palindrome Check
 
-### Objective
-To check whether a string is a palindrome by converting the string into a character array and comparing characters using the two-pointer technique.
+Objective
+To check whether a string is a palindrome by using a stack to reverse the characters and comparing it with the original string.
 
-### Flow
+Flow
 1. Accept input from user.
-2. Convert the string into a character array (char[]).
-3. Initialize two pointers (start and end).
-4. Compare characters from start and end.
+2. Push each character of the string into a stack.
+3. Pop characters from the stack to form the reversed string.
+4. Compare the original string with the reversed string.
 5. Display result.
 
-### Concepts Used
-- Character Array (char[])
-- Array Indexing
-- Two-Pointer Technique
-- Conditional Statements
+Concepts Used
+- Stack
+- Push Operation
+- Pop Operation
+- String Comparison
 - Looping
 
-### Branch Name
-UC4-CharacterArrayPalindrome
+Data Structure Used
+- Stack
+
+Branch Name
+UC5-StackBasedPalindrome
