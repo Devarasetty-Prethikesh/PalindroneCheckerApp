@@ -1,24 +1,28 @@
-Use Case 5 – Stack Based Palindrome Check
+Use Case 6 – Queue + Stack Based Palindrome Check
 
 Objective
-To check whether a string is a palindrome by using a stack to reverse the characters and comparing it with the original string.
+To check whether a string is a palindrome by comparing characters removed from a queue (FIFO) and a stack (LIFO).
 
 Flow
 1. Accept input from user.
-2. Push each character of the string into a stack.
-3. Pop characters from the stack to form the reversed string.
-4. Compare the original string with the reversed string.
-5. Display result.
+2. Enqueue each character of the string into a queue.
+3. Push each character of the string into a stack.
+4. Remove characters using dequeue (queue) and pop (stack).
+5. Compare both characters.
+6. Display result.
 
 Concepts Used
+- Queue
 - Stack
+- Enqueue Operation
+- Dequeue Operation
 - Push Operation
 - Pop Operation
-- String Comparison
-- Looping
+- FIFO vs LIFO Comparison
 
 Data Structure Used
+- Queue
 - Stack
 
 Branch Name
-UC5-StackBasedPalindrome
+UC6-QueueStackPalindrome
