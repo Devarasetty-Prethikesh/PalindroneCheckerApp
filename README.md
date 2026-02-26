@@ -1,28 +1,26 @@
-Use Case 6 – Queue + Stack Based Palindrome Check
+Use Case 7 – Deque-Based Optimized Palindrome Checker
 
 Objective
-To check whether a string is a palindrome by comparing characters removed from a queue (FIFO) and a stack (LIFO).
+To check whether a string is a palindrome by inserting characters into a deque and comparing the front and rear elements.
 
 Flow
 1. Accept input from user.
-2. Enqueue each character of the string into a queue.
-3. Push each character of the string into a stack.
-4. Remove characters using dequeue (queue) and pop (stack).
-5. Compare both characters.
+2. Insert characters of the string into a deque.
+3. Remove first and last elements from deque.
+4. Compare the removed characters.
+5. Repeat until deque becomes empty or has one element.
 6. Display result.
 
 Concepts Used
-- Queue
-- Stack
-- Enqueue Operation
-- Dequeue Operation
-- Push Operation
-- Pop Operation
-- FIFO vs LIFO Comparison
+- Deque (Double Ended Queue)
+- Front and Rear Access
+- Insert and Delete from both ends
+- Optimized Data Handling
+- Conditional Statements
+- Looping
 
 Data Structure Used
-- Queue
-- Stack
+- Deque
 
 Branch Name
-UC6-QueueStackPalindrome
+UC7-DequePalindrome
