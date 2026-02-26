@@ -1,25 +1,23 @@
-Use Case 9 – Recursive Palindrome Checker
+Use Case 10 – Case-Insensitive & Space-Ignored Palindrome
 
 Objective
-To check whether a string is a palindrome using recursion by comparing characters from the start and end positions.
+To check whether a string is a palindrome by ignoring spaces and letter case differences.
 
 Flow
 1. Accept input from user.
-2. Call a recursive function with start and end indexes.
-3. Compare start and end characters.
-4. If characters match, make recursive call for inner substring.
-5. Use base condition to stop recursion.
-6. Display result.
+2. Normalize the string by removing spaces and converting to lowercase.
+3. Compare characters from start and end positions.
+4. Display result.
 
 Concepts Used
-- Recursion
-- Base Condition
-- Call Stack
-- String Indexing
+- String Preprocessing
+- Regular Expressions
+- Case Normalization
+- Two-Pointer Technique
 - Conditional Statements
 
 Data Structure Used
-- Call Stack
+- String
 
 Branch Name
-UC9-RecursivePalindrome
+UC10-CaseInsensitivePalindrome
