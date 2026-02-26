@@ -1,38 +1,32 @@
 import java.util.Scanner;
+import java.util.Stack;
 
 public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        Stack<Character> stack = new Stack<>();
 
-        // Step 1: Read input string
-        System.out.println("Enter a string to check palindrome:");
+        System.out.println("Enter a string:");
         String input = sc.nextLine();
 
-        // Step 2: Convert string to character array
-        char[] charArray = input.toCharArray();
-
-        // Step 3: Use two-pointer technique
-        int start = 0;
-        int end = charArray.length - 1;
-
-        boolean isPalindrome = true;
-
-        while (start < end) {
-            if (charArray[start] != charArray[end]) {
-                isPalindrome = false;
-                break;
-            }
-            start++;
-            end--;
+        // Push characters into stack
+        for (int i = 0; i < input.length(); i++) {
+            stack.push(input.charAt(i));
         }
 
-        // Step 4: Display result
-        if (isPalindrome) {
-            System.out.println("The given string is a Palindrome");
+        // Pop characters and build reversed string
+        String reversed = "";
+        while (!stack.isEmpty()) {
+            reversed = reversed + stack.pop();
+        }
+
+        // Compare original and reversed strings
+        if (input.equals(reversed)) {
+            System.out.println("Palindrome");
         } else {
-            System.out.println("The given string is NOT a Palindrome");
+            System.out.println("Not a Palindrome");
         }
 
         sc.close();
