@@ -1,20 +1,21 @@
-## Use Case 3 – Palindrome Check Using String Reverse
+## Use Case 4 – Character Array Based Palindrome Check
 
 ### Objective
-To check whether a string is palindrome by reversing the string using a loop.
+To check whether a string is a palindrome by converting the string into a character array and comparing characters using the two-pointer technique.
 
 ### Flow
 1. Accept input from user.
-2. Reverse the string using for loop.
-3. Compare original string with reversed string.
-4. Display result.
+2. Convert the string into a character array (char[]).
+3. Initialize two pointers (start and end).
+4. Compare characters from start and end.
+5. Display result.
 
 ### Concepts Used
-- For Loop
-- String Immutability
-- String Concatenation (+)
-- equals() method
+- Character Array (char[])
+- Array Indexing
+- Two-Pointer Technique
+- Conditional Statements
+- Looping
 
 ### Branch Name
-UC3-Stringgit status
-ReversePalindrome
+UC4-CharacterArrayPalindrome
