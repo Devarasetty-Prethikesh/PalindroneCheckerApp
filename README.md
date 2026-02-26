@@ -1,23 +1,24 @@
-Use Case 10 – Case-Insensitive & Space-Ignored Palindrome
+Use Case 11 – Object-Oriented Palindrome Service
 
 Objective
-To check whether a string is a palindrome by ignoring spaces and letter case differences.
+To check whether a string is a palindrome by encapsulating the palindrome logic inside a dedicated service class.
 
 Flow
 1. Accept input from user.
-2. Normalize the string by removing spaces and converting to lowercase.
-3. Compare characters from start and end positions.
-4. Display result.
+2. Create PalindromeChecker class.
+3. Call checkPalindrome() method.
+4. Method compares characters from start and end.
+5. Display result.
 
 Concepts Used
-- String Preprocessing
-- Regular Expressions
-- Case Normalization
-- Two-Pointer Technique
+- Encapsulation
+- Method Abstraction
+- Single Responsibility Principle
+- Object Creation
 - Conditional Statements
 
 Data Structure Used
-- String
+- Internal (String Indexing)
 
 Branch Name
-UC10-CaseInsensitivePalindrome
+UC11-OOPPalindromeService
